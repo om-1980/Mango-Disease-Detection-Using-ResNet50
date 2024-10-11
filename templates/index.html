@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Disease Detection</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MANGO LEAF DISEASE DETECTION</h1>
+
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="file" name="file" accept="image/*" required>
+            <button type="submit">UPLOAD AND PREDICT</button>
+        </form>
+
+        <div class="img-res">
+          <!-- Image Placeholder -->
+          <img id="uploaded-image" alt="Uploaded Image">
+  
+          <!-- Result Section -->
+          <div id="result"></div>
+        </div>
+
+
+        <!-- Chart for Confidence Levels -->
+        <canvas id="disease-chart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/script.js"></script>
+</body>
+</html>
